@@ -43,7 +43,7 @@ const version = ({ mydata }) => {
         <div className="text-white flex flex-wrap">
           <div className=" border-b-2 border-[#31363F] p-1 w-full">
             <div className="pl-4 pr-4 flex flex-wrap gap-x-4">
-              <Link href="/">
+              <Link href="/" passHref>
                 <div className="hover:underline cursor-pointer transition underline-offset-8 decoration-4 decoration-[#FB4554] hover:text-[#FB4554]">
                   Home
                 </div>

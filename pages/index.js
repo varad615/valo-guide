@@ -48,7 +48,7 @@ const Home = ({ mydata }) => {
               <div className="cursor-pointer transition text-[#FB4554]">
                 Home
               </div>
-              <Link href="/version">
+              <Link href="/version" passHref>
                 <div className="hover:underline cursor-pointer transition underline-offset-8 decoration-4 decoration-[#FB4554] hover:text-[#FB4554]">
                   Version
                 </div>
