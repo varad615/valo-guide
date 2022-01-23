@@ -58,10 +58,10 @@ const Home = ({ mydata }) => {
         </div>
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
-            <div className="flex flex-wrap -m-4">
-              {mydata.map((item) => (
-                <div className="p-4 md:w-1/3">
-                  <div key={item.uuid}>
+            {mydata && (
+              <div className="flex flex-wrap -m-4">
+                {mydata.map((item) => (
+                  <div key={item.uuid} className="p-4 md:w-1/3">
                     <div className="h-full bg-[#0F1822] border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                       <img
                         className="object-cover object-center"
@@ -87,9 +87,9 @@ const Home = ({ mydata }) => {
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
       </div>
